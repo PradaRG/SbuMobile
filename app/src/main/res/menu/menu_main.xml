@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Noticias" android:title="Noticias" android:icon="@drawable/ic_public_black_24dp"/>
+    <item android:id="@+id/OfertaAcademica" android:title="Oferta Académica" android:icon="@drawable/ic_library_books_black_24dp"/>
+    <item android:id="@+id/Autogestion" android:title="Autogestion" android:icon="@drawable/ic_record_voice_over_black_24dp"/>
+    <item android:id="@+id/CalendarioAcademico" android:title="Calendario Académico" android:icon="@drawable/ic_event_available_black_24dp"/>
+    <item android:id="@+id/Campus" android:title="Campus Virtual" android:icon="@drawable/ic_dvr_black_24dp"/>
+    <item android:id="@+id/ReglamentoEstudio" android:title="Reglamento de Estudios" android:icon="@drawable/ic_school_black_24dp"/>
+    <item android:id="@+id/AsistenciaDocente" android:title="Asistencia Docente" android:icon="@drawable/ic_perm_contact_calendar_black_24dp"/>
+
+</menu>

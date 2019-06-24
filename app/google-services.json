@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "999139950313",
+    "firebase_url": "https://sbuapp-a15d1.firebaseio.com",
+    "project_id": "sbuapp-a15d1",
+    "storage_bucket": "sbuapp-a15d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999139950313:android:bf3c9a8c7af31bdc",
+        "android_client_info": {
+          "package_name": "pasantia.sbu.utn.sbuapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999139950313-7282eaua7knhadc752kqfpglst40nc8k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pasantia.sbu.utn.sbuapp",
+            "certificate_hash": "277e8d8f4e0da788daca2e28df175ef25c0f623c"
+          }
+        },
+        {
+          "client_id": "999139950313-bmjmcqunurcnb2ot5h1ju8pu6vtjuj88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANV32b8u52mWJh9v5lmn8pFwL3pddbib0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999139950313-bmjmcqunurcnb2ot5h1ju8pu6vtjuj88.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
