@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Sbuapp</string>
+    <string name="fecha_actual">Fecha actual</string>
+    <string name="titulo">Titulo</string>
+    <string name="pubDate">Fecha de publicacion</string>
+    <string name="Descripcion">Descripcion</string>
 </resources>

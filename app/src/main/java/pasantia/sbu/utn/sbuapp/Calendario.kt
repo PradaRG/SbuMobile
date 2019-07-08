@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.View
 import android.webkit.WebChromeClient
 import android.webkit.WebViewClient
+import android.widget.CalendarView
 import android.widget.Toast
 import androidx.appcompat.widget.PopupMenu
 import kotlinx.android.synthetic.main.activity_autogestion.*
@@ -15,24 +16,30 @@ import kotlinx.android.synthetic.main.activity_main.imageView_opcion
 
 class Calendario : AppCompatActivity() {
 
+    lateinit var calendarView: CalendarView;
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calendario)
         imageView_opcion.setOnClickListener {
             llamarmenu(it)
         }
-        webview.webChromeClient = object  : WebChromeClient(){}
+
+        /*webview.webChromeClient = object  : WebChromeClient(){}
         webview.webViewClient = object : WebViewClient() {}
         webview.loadUrl("https://calendar.google.com/calendar/embed?src=totoelguan%40gmail.com&ctz=America%2FArgentina%2FCordoba")
        // webview.loadUrl("file:///android_asset/calendario.html")
         val settings = webview.settings
-        settings.javaScriptEnabled = true
+        settings.javaScriptEnabled = true*/
 
 
 
 
     }
 
+    private fun getCalendar() {
+        calendarView
+    }
     override fun onBackPressed() {
         webview.goBack()
     }
