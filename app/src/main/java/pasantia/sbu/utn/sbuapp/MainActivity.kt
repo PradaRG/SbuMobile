@@ -1,5 +1,6 @@
 package pasantia.sbu.utn.sbuapp
 
+import android.annotation.SuppressLint
 import android.app.ProgressDialog
 
 import android.content.Intent
@@ -23,7 +24,7 @@ import pasantia.sbu.utn.sbuapp.Model.RootObject
 class MainActivity : AppCompatActivity() {
 private val TAG = ' '
     private val RSS_link = "http://www.frp.utn.edu.ar/info2/?feed=rss2"
-    private val RSS_to_JSON_API = "https://api.rss2json.com/v1/api.json?rss_url="
+    private val RSS_to_JSON_API = " https://api.rss2json.com/v1/api.json?rss_url="
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -60,14 +61,15 @@ private val TAG = ' '
     }
 
      private fun loadRSS() {
-     val loadRSSAsync = object:AsyncTask<String, String, String>(){
+     val loadRSSAsync = @SuppressLint("StaticFieldLeak")
+     object:AsyncTask<String, String, String>(){
             internal var mDialog = ProgressDialog(this@MainActivity)
 
 
             override fun onPostExecute(result: String?) {
                 mDialog.dismiss()
-                var rssObject: RootObject?
-                rssObject= Gson().fromJson<RootObject>(result, RootObject::class.java!!)
+                var rssObject= RootObject()
+                rssObject= Gson().fromJson<RootObject>(result, RootObject::class.java)
                 val adapter = FeedAdapter(rssObject,baseContext)
                 recyclerView.adapter=adapter
                 adapter.notifyDataSetChanged()
@@ -147,3 +149,5 @@ private val TAG = ' '
         }
     }
 }
+
+

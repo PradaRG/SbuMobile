@@ -1,5 +1,6 @@
 package pasantia.sbu.utn.sbuapp.Model
 
-data class RootObject (val status : String, val feed : Feed, val items : List<Item>) {
+data class RootObject(val status: String, val feed: Feed?, val items: List<Item>) {
+    constructor() : this("", null, emptyList())
 
 }
